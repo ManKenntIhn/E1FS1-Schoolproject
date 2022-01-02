@@ -16,7 +16,7 @@ namespace HangMan.cs.hange_man
         // neue ArrayList erstellen und mit Wörtern aus dem Array WortData initialisieren
         static ArrayList wortListe = new ArrayList(WortData);
 
-        // check des Wortes
+        // check des Wortes (Methode sollte nach unten hinter die inttalisierung von C verschoben werden)
         static bool IsWort(string Geheim_wort, List<string> BuchstabeErraten)
         {
 
