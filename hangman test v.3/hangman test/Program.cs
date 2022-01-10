@@ -47,7 +47,7 @@ namespace HangMan.cs.hange_man
             Console.WriteLine("Galgenmännchen");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("errate ein Wort mit {0} Buchstaben ", Geheimwort.Length);
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Du hast {0} Leben", Leben);
             Isletter(Geheimwort, BuchstabeErraten);
             // solange die leben höher als 0 sind
