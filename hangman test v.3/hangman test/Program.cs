@@ -19,7 +19,7 @@ namespace HangMan.cs.hange_man
 
         static void Main()
         {
-            Console.Title = ("HangMan");
+            Console.Title = ("Galgenmänchen");
             // Geheimwort
             Random random = new Random((int)DateTime.Now.Ticks);
 
@@ -28,8 +28,21 @@ namespace HangMan.cs.hange_man
             string Geheimwort = Geheim.ToUpper();
             List<string> BuchstabeErraten = new List<string>();
 
-
-            int Leben = 5;
+            int Leben = 0;
+            if (Geheimwort.Length < 10)
+                {
+                Leben = 10;
+                }
+            else if (Geheimwort.Length > 5 | Geheimwort.Length <= 10)
+                {
+                Leben = 7;
+                }
+            else if (Geheimwort.Length >= 20)
+                { 
+                Leben = 5;
+                }
+            
+            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Galgenmännchen");
             Console.ForegroundColor = ConsoleColor.Blue;
