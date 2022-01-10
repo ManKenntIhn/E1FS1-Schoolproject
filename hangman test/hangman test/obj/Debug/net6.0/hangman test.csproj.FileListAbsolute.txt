@@ -13,3 +13,18 @@ C:\Users\Philipp\source\repos\hangman test\hangman test\obj\Debug\net6.0\hangman
 C:\Users\Philipp\source\repos\hangman test\hangman test\obj\Debug\net6.0\ref\hangman test.dll
 C:\Users\Philipp\source\repos\hangman test\hangman test\obj\Debug\net6.0\hangman test.pdb
 C:\Users\Philipp\source\repos\hangman test\hangman test\obj\Debug\net6.0\hangman test.genruntimeconfig.cache
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\hangman test.exe
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\hangman test.deps.json
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\hangman test.runtimeconfig.json
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\hangman test.dll
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\ref\hangman test.dll
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\bin\Debug\net6.0\hangman test.pdb
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.csproj.AssemblyReference.cache
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.AssemblyInfoInputs.cache
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.AssemblyInfo.cs
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.csproj.CoreCompileInputs.cache
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.dll
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\ref\hangman test.dll
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.pdb
+C:\Users\Philipp\source\repos\hangman test v.2\hangman test\obj\Debug\net6.0\hangman test.genruntimeconfig.cache
