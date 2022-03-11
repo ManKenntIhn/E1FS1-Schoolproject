@@ -69,11 +69,11 @@ namespace HangMan.cs.hange_man
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Galgenmännchen");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("errate ein Wort mit {0} Buchstaben ", Geheimwort.Length);
+            Console.WriteLine("Errate ein Wort mit {0} Buchstaben ", Geheimwort.Length);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Du hast {0} Leben", Leben);
             IstBuchstabe(Geheimwort, BuchstabeErraten);
-            // solange die leben höher als 0 sind
+            // Solange die Leben höher als 0 sind
             while (Leben > 0)
             {
                 // Consoleneingabe + Anpassung der groß/klein Schreibung
@@ -82,12 +82,12 @@ namespace HangMan.cs.hange_man
                 string Eingabe = EingabeEgal.ToUpper();
 
 
-                // Falls BuchstabeErraten die Eingabe enthält
+                // Falls BuchstabeErraten die Eingabe enthält:
                 if (BuchstabeErraten.Contains(Eingabe))
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("du hast [{0}] bereits versucht", Eingabe);
+                    Console.WriteLine("Du hast [{0}] bereits versucht", Eingabe);
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Bitte versuche ein einen anderen Buchstaben");
                     GetAlphabet(Eingabe);
@@ -98,7 +98,7 @@ namespace HangMan.cs.hange_man
                 }
 
 
-                // falls das Wort errate, wird
+                // Falls das Wort erraten wird
                 BuchstabeErraten.Add(Eingabe);
                 if (IstWort(Geheimwort, BuchstabeErraten))
                 {
@@ -108,7 +108,7 @@ namespace HangMan.cs.hange_man
                     break;
                 }
 
-                // falls ein Buchstabe erraten wird
+                // Falls ein Buchstabe erraten wird
                 else if (Geheimwort.Contains(Eingabe))
                 {
                     Console.Clear();
@@ -122,7 +122,7 @@ namespace HangMan.cs.hange_man
 
                 }
 
-                // falls ein falscher Buchstabe eingegeben wird, wird 1 Leben abgezogen.
+                // Falls ein falscher Buchstabe eingegeben wird, wird 1 Leben abgezogen.
                 else
                 {
                     Console.Clear();
@@ -137,7 +137,7 @@ namespace HangMan.cs.hange_man
                 }
                 Console.WriteLine();
 
-                // Gameover falls alle leben aufgebraucht werden.
+                // Gameover falls alle Leben aufgebraucht werden.
                 if (Leben == 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -147,12 +147,12 @@ namespace HangMan.cs.hange_man
 
             }
 
-            Console.WriteLine("drücke eine taste um fortzufahren");
+            Console.WriteLine("Drücke eine Taste um fortzufahren");
             Console.ReadKey();
 
         }
 
-        // das Alphabet
+        // Das Alphabet
         static void GetAlphabet(string Buchstaben)
         {
 
@@ -172,12 +172,12 @@ namespace HangMan.cs.hange_man
         {
 
             bool Wort = false;
-            // durchschleifen des Gesuchten Wortes
+            // Durchschleifen des Gesuchten Wortes
             for (int i = 0; i < Geheim_wort.Length; i++)
             {
-                // initialisiere c mit dem index von Geheimwort[i]
+                // Initialisiere c mit dem Index von Geheimwort[i]
                 string c = Convert.ToString(Geheim_wort[i]);
-                // check ob c in der liste der erratenen Buchstaben steht
+                // Check ob c in der liste der erratenen Buchstaben steht
                 if (BuchstabeErraten.Contains(c))
                 {
                     Wort = true;
@@ -185,7 +185,7 @@ namespace HangMan.cs.hange_man
                 /*Wenn c nicht in den erratenen Buchstaben enthalten ist, haben wir nicht das vollständige Wort*/
                 else
                 {
-                    // ändere den Wert von Wort in false und gebe false zurück
+                    // Ändere den Wert von Wort in false und gebe false zurück
                     return Wort = false;
 
                 }
@@ -201,11 +201,11 @@ namespace HangMan.cs.hange_man
         {
             // Erratenes Wort als leere Zeichenfolge festlegen
             string RichtigeBuchstaben = "";
-            // durchschleifen des gesuchten Wortes
+            // Durchschleifen des gesuchten Wortes
             for (int i = 0; i < Geheimwort.Length; i++)
             {
                 /* Initialisieren c mit dem wert des Index i
-                 * wenn i = 0
+                 * Wenn i = 0
                  * c = Geheimwort[0] ist der erste Index des Wortes
                  * c = Geheimwort[1] ist der zweite Index des Wortes und so weiter mit [3], [4], ...*/
                 string c = Convert.ToString(Geheimwort[i]);
@@ -213,17 +213,17 @@ namespace HangMan.cs.hange_man
                 // Falls c in der Liste der geratenen Buchstaben ist 
                 if (BuchstabeErraten.Contains(c))
                 {
-                    // füge c zu den richtigen Buchstaben hinzu
+                    // Füge c zu den richtigen Buchstaben hinzu
                     RichtigeBuchstaben += c;
                 }
                 else
                 {
-                    // ansonst gebe "__" aus um zu zeigen, dass der Buchstabe kein teil des Wortes ist
+                    // Ansonst gebe "__" aus um zu zeigen, dass der Buchstabe kein teil des Wortes ist
                     RichtigeBuchstaben += " _ ";
                 }
 
             }
-            // danach werden alle korrekten Buchstaben ausgegeben.
+            // Danach werden alle korrekten Buchstaben ausgegeben.
             return RichtigeBuchstaben;
 
         }
